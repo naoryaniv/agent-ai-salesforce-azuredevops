@@ -1,0 +1,21 @@
+{
+  "app_title": "Task Generator",
+  "instructions_text": "This tool allows you to generate technical and business tasks for the Salesforce platform, intelligently and automatically – based on a selected feature from the TFS system.\n\nThe AI-powered system will analyze the feature's content and generate tailored tasks directly under it.",
+  "select_project": "*Select Project",
+  "select_team": "Select Team",
+  "select_effort": "Select Effort",
+  "select_feature": "Select Feature",
+  "feature_description": "Feature Description",
+  "generate": "Create",
+  "generate_subtasks": "Generate Sub-Tasks",
+  "create_feature_title": "Create New Feature",
+  "feature_title_input": "*Title",
+  "create_button": "Create",
+  "sidebar_title": "Navigation Menu",
+  "nav_create_tasks": "Create Tasks",
+  "nav_create_features": "Create Features",
+  "error_message": "Please fill in required fields",
+  "success_message_tasks": "📝 Tasks created successfully!",
+  "success_message_feature": "✅ Feature created successfully!"
+}
+
