@@ -108,7 +108,17 @@ def apply_direction_css(lang: str, bg_image_base64: str):
     </style>
     """
 
+    hide_streamlit_style = """
+        <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+        </style>
+    """
     st.markdown(css, unsafe_allow_html=True)
+    # Removing the streamlit debug line. If you are working on the code, set this line to 'False'
+    st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 # Get list of all projects from Azure DevOps
 all_projects = streamlit_agent.utils.get_projects(organization, personal_access_token)
@@ -182,12 +192,6 @@ def show_feature_builder_page():
         feature_title = st.text_input(labels["feature_title_input"])
         feature_description = st.text_area(labels["feature_description"])
 
-        # feature_effort = st.number_input(labels["select_effort"], 
-        # min_value=1, 
-        # max_value=99, 
-        # step=1, 
-        # format="%d", # Displays whole numbers only
-        # key="num1")
 
         col1, col2 = st.columns(2)
 

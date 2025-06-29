@@ -94,7 +94,7 @@ def request_to_openai(client, prompt, feature_description, model, temperature):
                 {"role": "user", "content": feature_description}
             ],
             temperature = temperature
-            #max_tokens = max_tokens ###
+            #max_tokens = max_tokens
         )
 
     tasks = response.choices[0].message.content
