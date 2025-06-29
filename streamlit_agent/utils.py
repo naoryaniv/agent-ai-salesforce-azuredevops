@@ -137,7 +137,13 @@ def create_work_items_in_tfs(organization, selected_project, personal_access_tok
                 "path": "/fields/Microsoft.VSTS.Scheduling.Effort",
                 "from": None,
                 "value": work_item["effort"]
-            },]
+            },
+            {
+                "op": "add",
+                "path": "/fields/Microsoft.VSTS.Common.Priority",
+                "from": None,
+                "value": work_item["priority"]
+            }]
         
         
         if work_item_type == 'Feature':
@@ -173,13 +179,6 @@ def create_work_items_in_tfs(organization, selected_project, personal_access_tok
         else:
             print("Error occure while create backlog")
             print(response.status_code, response.text)
-
-
-
-
-
-
-
 
 
 def get_project_teams(organization, personal_access_token, selected_project):

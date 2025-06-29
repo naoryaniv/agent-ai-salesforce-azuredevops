@@ -10,6 +10,7 @@ For each task, produce:
   1. A brief background of the task
   2. Detailed technical instructions on how to implement it in Salesforce
 * **"effort"** – time required to complete the task, written in digits only (representing days), with no symbols or letters
+* **"priority"** – priority for completing the work item, based on business and technical goals. **The value should be between 1 and 4 only**
 
 **Guidelines for writing the description:**
 
@@ -32,12 +33,14 @@ Follow this order:
     {
     "title": "First task name",
     "description": "Description of the first task",
-    "effort": 2
+    "effort": 2,
+    "priority":1
     },
     {
     "title": "Second task name",
     "description": "...",
-    "effort": 1
+    "effort": 1,
+    "priority":3
     }
 ]
 ```

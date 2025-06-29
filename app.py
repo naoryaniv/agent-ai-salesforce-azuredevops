@@ -155,13 +155,11 @@ def show_generate_tasks_page():
                 # Load the prompt from a file
                 prompt = streamlit_agent.utils.prompt_text('prompt.txt')
                 selected_lang = lang_map[lang_choice]
-                print(selected_lang)
+                
                 if selected_lang == "he":
                     prompt = prompt + "You must respond **only in Hebrew**."
                 else:
                     prompt = prompt + "You must respond **only in English**."
-
-                print(prompt)
 
                 # Generate tasks using OpenAI
                 tasks = streamlit_agent.utils.request_to_openai(client, prompt, feature_description, model, temperature)
@@ -184,35 +182,34 @@ def show_feature_builder_page():
         feature_title = st.text_input(labels["feature_title_input"])
         feature_description = st.text_area(labels["feature_description"])
 
-        feature_effort = st.number_input(labels["select_effort"], 
-        min_value=1, 
-        max_value=99, 
-        step=1, 
-        format="%d", # Displays whole numbers only
-        key="num1")
+        # feature_effort = st.number_input(labels["select_effort"], 
+        # min_value=1, 
+        # max_value=99, 
+        # step=1, 
+        # format="%d", # Displays whole numbers only
+        # key="num1")
 
+        col1, col2 = st.columns(2)
 
+        with col1:
+            feature_effort = st.number_input(labels["select_effort"], 
+            min_value=1, 
+            max_value=99, 
+            step=1, 
+            format="%d", # Displays whole numbers only
+            key="effort")
 
-
-
-        # col1, col2 = st.columns(2)
-
-        # with col1:
-        #     number1 = st.number_input("בחר מספר", 
-        #     min_value=1, 
-        #     max_value=99, 
-        #     step=1, 
-        #     format="%d", # Displays whole numbers only
-        #     key="num1")
-
-
-        # with col2:
-        #     number2 = st.number_input("בחר כמות", min_value=1, max_value=99, step=1, format="%d", key="num2")
-
+        with col2:
+            feature_priority = st.number_input(labels["select_priority"], 
+            min_value=1, 
+            max_value=4, 
+            step=1, 
+            format="%d", # Displays whole numbers only
+            key="priority")
 
 
         work_items = []
-        work_items.append({ "title": feature_title, "description": feature_description , "effort": feature_effort})
+        work_items.append({ "title": feature_title, "description": feature_description , "effort": feature_effort, "priority": feature_priority})
 
 
         if st.button(labels["generate"]):

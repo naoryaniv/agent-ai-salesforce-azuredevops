@@ -5,6 +5,7 @@
   "select_team": "בחר קבוצה",
   "select_feature": "בחר פיצ'ר",
   "select_effort": "הערכת מאמץ",
+  "select_priority": "עדיפות",
   "feature_description": "תיאור",
   "generate": "יצירה",
   "generate_subtasks": "צור תתי-משימות",

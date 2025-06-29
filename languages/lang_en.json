@@ -4,6 +4,7 @@
   "select_project": "*Select Project",
   "select_team": "Select Team",
   "select_effort": "Select Effort",
+  "select_priority": "Select Priority",
   "select_feature": "Select Feature",
   "feature_description": "Feature Description",
   "generate": "Create",
