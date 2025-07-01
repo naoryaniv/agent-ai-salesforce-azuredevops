@@ -2,6 +2,7 @@
 
 Agent AI Salesforce is an intelligent assistant for automatically breaking down high-level features into actionable tasks in Azure DevOps (TFS). It leverages OpenAI's GPT models and integrates directly with your existing Azure Devops environment to streamline workflows for both technical and business teams.
 
+![TFS App](https://github.com/user-attachments/assets/2d824011-0cd2-4895-9b1f-47bc7c02730a)
 ---
 
 ## Features
