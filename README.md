@@ -4,6 +4,11 @@ Agent AI Salesforce is an intelligent assistant for automatically breaking down 
 
 ![TFS App](https://github.com/user-attachments/assets/2d824011-0cd2-4895-9b1f-47bc7c02730a)
 ---
+## Contributors list
+[Sarit Katz](https://github.com/sarit-katz)
+
+[Yaniv Naor](https://github.com/yaniv-naor)
+
 
 ## Features
 
@@ -19,7 +24,7 @@ Agent AI Salesforce is an intelligent assistant for automatically breaking down 
 
 1. Clone the repository:
 
-git clone https://github.com/naoryaniv/agent-ai-salesforce-azuredevops.git
+git clone https://github.com/yaniv-naor/agent-ai-salesforce-azuredevops.git
 cd agent-ai-salesforce-azuredevops
 
 
@@ -102,4 +107,4 @@ MIT License.
 ##  Issues and Support
 
 If you encounter issues or want to contribute, please open an Issue or Pull Request on:
-[GitHub repository](https://github.com/naoryaniv/agent-ai-salesforce-azuredevops/issues)
+[GitHub repository](https://github.com/yaniv-naor/agent-ai-salesforce-azuredevops/issues)
